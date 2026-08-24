@@ -5,21 +5,21 @@
 class Clawops < Formula
   desc "ClawOps CLI — AI Agent를 위한 한국 전화·문자 API"
   homepage "https://claw-ops.com"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clawopshq/cli/releases/download/v0.1.0/clawops_0.1.0_darwin_amd64.tar.gz"
-      sha256 "058a38e8eb01b5e90f3be8846f9841239f343aaf358da729687ca214705eaa54"
+      url "https://github.com/clawopshq/cli/releases/download/v0.1.1/clawops_0.1.1_darwin_amd64.tar.gz"
+      sha256 "681a1471fd9aa90c2f77c1b1e47a8aa05ed47e1c7e16f2637eedf72b18ada570"
 
       define_method(:install) do
         bin.install "clawops"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clawopshq/cli/releases/download/v0.1.0/clawops_0.1.0_darwin_arm64.tar.gz"
-      sha256 "25aad3c46299ea43ae9382d90c1a51f5f8630b07e56f7ff0ff8a6bdf9867314c"
+      url "https://github.com/clawopshq/cli/releases/download/v0.1.1/clawops_0.1.1_darwin_arm64.tar.gz"
+      sha256 "eb2d70079ce533981b0c81b466ed86260de00f42b34dab74798f9dd4e894b245"
 
       define_method(:install) do
         bin.install "clawops"
@@ -29,15 +29,15 @@ class Clawops < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clawopshq/cli/releases/download/v0.1.0/clawops_0.1.0_linux_amd64.tar.gz"
-      sha256 "2b46a73a90672039f7697832623b4aabc7aa97c5736101e993bb8da955ceca5e"
+      url "https://github.com/clawopshq/cli/releases/download/v0.1.1/clawops_0.1.1_linux_amd64.tar.gz"
+      sha256 "62de37383d38388b3a35b75e1a64640a80bb34d680b840fe583bedf6fe603b00"
       define_method(:install) do
         bin.install "clawops"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clawopshq/cli/releases/download/v0.1.0/clawops_0.1.0_linux_arm64.tar.gz"
-      sha256 "81569d24daa5f5799523dfb91eaafd543b725c88db243afeaacb04869dad5de4"
+      url "https://github.com/clawopshq/cli/releases/download/v0.1.1/clawops_0.1.1_linux_arm64.tar.gz"
+      sha256 "8ba61f35537c7d689044ba43198c88486ff915e06abbf76ae0db360e4b83a43e"
       define_method(:install) do
         bin.install "clawops"
       end
